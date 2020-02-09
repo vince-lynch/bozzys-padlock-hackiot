@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="Column_Number">3</integer>
+    <integer name="Delay">500</integer>
+    <integer name="Line_Number">3</integer>
+    <integer name="Round_Number">4</integer>
+</resources>

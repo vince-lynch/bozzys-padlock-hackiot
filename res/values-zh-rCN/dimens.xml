@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">1.0dip</dimen>
+    <dimen name="activity_vertical_margin">1.0dip</dimen>
+    <dimen name="radio_text_size">12.0dip</dimen>
+    <dimen name="text_size1">16.0dip</dimen>
+</resources>

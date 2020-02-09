@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/add_bg" android:layout_width="250.0dip" android:layout_height="230.0dip" android:layout_marginTop="1.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="21.0dip" android:textColor="@color/textcolor" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/unlocking" />
+        <EditText android:textSize="18.0sp" android:textColor="@color/textcolor1" android:textColorHint="@color/textcolor1" android:gravity="center_vertical" android:id="@id/et_ps" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="15.0dip" android:hint="@string/password" android:inputType="number" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/cb_rps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/textcolor" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remember_ps" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="20.0dip" android:baselineAligned="false">
+            <TextView android:textSize="20.0dip" android:textColor="@color/textcolor4" android:gravity="center" android:id="@id/tv_refresh" android:background="@drawable/refresh1_p" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sure" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/textcolor4" android:gravity="center" android:id="@id/tv_close" android:background="@drawable/refresh2_p" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancle" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

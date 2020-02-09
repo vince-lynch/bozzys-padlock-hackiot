@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="#70000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/add_bg" android:layout_width="250dp" android:layout_height="200dp" android:layout_marginTop="100dp">
+        <TextView android:textSize="21dp" android:id="@+id/textView4" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_name"/>
+        <EditText android:textSize="18sp" android:textColor="@color/textcolor1" android:gravity="center_vertical" android:id="@+id/et_name" android:background="@drawable/et_bg1" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <View android:background="@color/textcolor2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="40dp" android:baselineAligned="false">
+            <TextView android:textSize="20dp" android:textColor="@color/textcolor4" android:gravity="center" android:id="@+id/tv_refresh" android:background="@drawable/refresh1_p" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/sure" android:layout_weight="1"/>
+            <TextView android:textSize="20dp" android:textColor="@color/textcolor4" android:gravity="center" android:id="@+id/tv_close" android:background="@drawable/refresh2_p" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cancle" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

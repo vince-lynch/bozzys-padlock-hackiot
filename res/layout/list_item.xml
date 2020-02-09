@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="60.0dip" android:textAllCaps="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rel1" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" android:layout_marginStart="1.0dip" android:layout_toEndOf="@id/img_battery">
+        <TextView android:textColor="@color/textcolor" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/textcolor1" android:ellipsize="end" android:id="@id/tv_mac" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_below="@id/tv_name" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_conn" android:padding="4.0dip" android:layout_width="40.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_disconn" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/rel1" />
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="60.0dip" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/rel1" style="?android:progressBarStyle" />
+    <TextView android:textColor="@color/textcolor4" android:gravity="center" android:id="@id/tv_open" android:background="@drawable/btn_bg1_p" android:padding="0.0dip" android:layout_width="55.0dip" android:layout_height="32.0dip" android:text="@string/open" android:layout_centerVertical="true" android:layout_toEndOf="@id/img_conn" />
+    <TextView android:textColor="@color/textcolor4" android:gravity="center" android:id="@id/tv_manage" android:background="@drawable/btn_bg1_p" android:padding="0.0dip" android:layout_width="55.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:text="@string/manage" android:layout_centerVertical="true" android:layout_toEndOf="@id/tv_open" />
+    <ImageView android:id="@id/img_battery" android:padding="3.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_battery" android:layout_centerVertical="true" />
+</RelativeLayout>

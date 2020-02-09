@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/capture_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/capture_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/capture_mask_top" android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="120dp" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:id="@+id/capture_crop_view" android:background="@drawable/qr_code_bg" android:layout_width="200dp" android:layout_height="200dp" android:layout_below="@+id/capture_mask_top" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/capture_scan_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@drawable/scan_line" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/capture_mask_bottom" android:background="@drawable/shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/capture_crop_view" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/capture_mask_left" android:background="@drawable/shadow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/capture_crop_view" android:layout_above="@+id/capture_mask_bottom" android:layout_below="@+id/capture_mask_top" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/capture_mask_right" android:background="@drawable/shadow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/capture_crop_view" android:layout_above="@+id/capture_mask_bottom" android:layout_below="@+id/capture_mask_top" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff4f98ec" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/img_p_back" android:padding="13dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_back"/>
+        <ImageView android:id="@+id/img_p_p" android:padding="8dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_p_pictrue" android:layout_alignParentRight="true"/>
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanqr" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button android:textSize="20dp" android:textColor="#ffffffff" android:id="@+id/btn_pic" android:background="#ff4f98ec" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="90dp" android:text="@string/selectpic" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

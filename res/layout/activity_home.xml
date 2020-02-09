@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_bsdq_main" android:background="@drawable/ic_bg" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@android:id/tabcontent" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_radio" android:background="#ff21262e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/home_activity" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img_home" android:padding="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_lock_w" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/radio_text_size" android:textColor="#ffffffff" android:id="@id/tx_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/ble" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/record_activity" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img_record" android:padding="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_record_w" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/radio_text_size" android:textColor="#ffffffff" android:id="@id/tx_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/record" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/user_activity" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img_user" android:padding="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_user_w" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/radio_text_size" android:textColor="#ffffffff" android:id="@id/tx_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/user" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RadioGroup>
+        </RelativeLayout>
+    </TabHost>
+</RelativeLayout>
